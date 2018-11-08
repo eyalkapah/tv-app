@@ -22,6 +22,10 @@
   color: #61dafb;
 }
 
+div.container {
+  padding: 0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -29,4 +33,92 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+div.scroll {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container-start {
+  display: flex;
+  justify-content: start;
+}
+.flex-container-end {
+  display: flex;
+  justify-content: end;
+}
+
+div.title {
+  font-weight: bold;
+  text-align: center;
+  background: #efefef;
+  padding: 5px 0px;
+}
+
+img.poster {
+  width: 274px;
+  height: 180px;
+}
+
+div.info {
+  font-size: 13px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+div.card {
+  margin: 5px;
+  min-width: 274px;
+}
+
+.link-text {
+  cursor: pointer;
+}
+
+div.section {
+  margin: 20px 20px 5px 10px;
+}
+
+.zoom-effect-container {
+  float: left;
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.image-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image-card img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.zoom-effect-container:hover .image-card img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.card:hover {
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-container-center {
+  display: flex;
+  justify-content: center;
 }
